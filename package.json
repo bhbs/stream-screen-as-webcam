@@ -1,0 +1,19 @@
+{
+  "name": "stream-screen-as-webcam",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prebuild": "rsync -av --exclude='*.ts' src/* dist/",
+    "build": "tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chrome": "^0.0.174",
+    "prettier": "^2.5.1"
+  },
+  "dependencies": {
+    "typescript": "^4.5.4"
+  }
+}
