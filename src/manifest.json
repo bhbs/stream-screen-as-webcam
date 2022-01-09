@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Stream screen as webcam",
+  "version": "0.0.1",
+  "action": {
+    "default_title": "Stream screen as webcam"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["index.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["script.js"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
